@@ -1,5 +1,7 @@
 # Yahtzee: The Collaborative Git Exercise
 
+[![Test package](https://github.com/sdahdah/yahtzee/actions/workflows/test-package.yml/badge.svg?branch=main)](https://github.com/sdahdah/yahtzee/actions/workflows/test-package.yml)
+
 For this exercise, we will collaboratively build a tool for scoring Yahtzee
 dice according to [these rules](https://yahtzee-rules.com/). The pedantic among
 you will soon notice that we are not playing with bonuses, Jokers, or chance.
