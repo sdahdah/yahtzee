@@ -19,4 +19,8 @@ def yahtzee(dice: np.ndarray) -> int:
     int :
         Score.
     """
-    raise NotImplementedError()
+    if np.all(dice==dice[0]):
+        print('YAHTZEE, BABY! \n')
+        return 50
+    else:
+        return 0
