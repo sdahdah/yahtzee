@@ -16,4 +16,8 @@ def ones(dice: np.ndarray) -> int:
     int :
         Score.
     """
-    raise NotImplementedError("Sam was here")
+    score = 0
+    for i in dice:
+        if i == 1:
+            score += 1
+    return score
