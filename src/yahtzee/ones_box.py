@@ -16,4 +16,4 @@ def ones(dice: np.ndarray) -> int:
     int :
         Score.
     """
-    raise NotImplementedError()
+    raise NotImplementedError("Sam was here")
