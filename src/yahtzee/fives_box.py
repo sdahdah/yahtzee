@@ -16,4 +16,8 @@ def fives(dice: np.ndarray) -> int:
     int :
         Score.
     """
-    raise NotImplementedError()
+    num_fives = 0
+    for i in range(len(dice)):
+        if dice[i] == 5:
+            num_fives +=1
+    return num_fives

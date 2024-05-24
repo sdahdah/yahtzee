@@ -21,4 +21,25 @@ def full_house(dice: np.ndarray) -> int:
     int :
         Score.
     """
-    raise NotImplementedError()
+    count = np.zeros(6,)
+    '''
+    count[0] = (dice == 1).sum()
+    count[1] = (dice == 2).sum()
+    count[2] = (dice == 3).sum()
+    count[3] = (dice == 4).sum()
+    count[4] = (dice == 5).sum()
+    count[5] = (dice == 6).sum()
+    '''
+    
+    for i in range(count.size):
+        count[i] = (dice == i + 1).sum()
+        
+
+    if (3 in count) and (2 in count):
+        score = 25
+    else:
+        score = 0
+
+
+    # raise NotImplementedError()
+    return score
