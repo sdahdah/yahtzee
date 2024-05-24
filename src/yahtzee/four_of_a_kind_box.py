@@ -20,4 +20,9 @@ def four_of_a_kind(dice: np.ndarray) -> int:
     int :
         Score.
     """
-    raise NotImplementedError()
+
+    for dice_val in range(1, 7):
+        if dice[dice == dice_val].size == 4:
+            return np.sum(dice)
+    
+    return 0
