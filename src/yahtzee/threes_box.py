@@ -16,4 +16,9 @@ def threes(dice: np.ndarray) -> int:
     int :
         Score.
     """
-    raise NotImplementedError()
+    score = 0
+    for i in range(len(dice)):
+        if dice[i] == 3:
+            score += 3
+
+    return score
