@@ -20,4 +20,14 @@ def low_straight(dice: np.ndarray) -> int:
     int :
         Score.
     """
-    raise NotImplementedError()
+
+    score_1 = np.array([1, 2, 3, 4])
+    score_2 = np.array([2, 3, 4, 5])
+    score_3 = np.array([3, 4, 5, 6])
+    all_scores = [score_1, score_2, score_3]
+
+    for score in all_scores:
+        if np.all(np.isin(score, dice)):
+            return 30
+        
+    return 0 
