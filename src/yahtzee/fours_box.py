@@ -16,4 +16,4 @@ def fours(dice: np.ndarray) -> int:
     int :
         Score.
     """
-    raise NotImplementedError()
+    raise np.sum(dice[dice == 4])
