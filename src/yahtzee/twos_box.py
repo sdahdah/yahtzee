@@ -16,4 +16,12 @@ def twos(dice: np.ndarray) -> int:
     int :
         Score.
     """
+    count=0
+    for value in dice:
+        if value == 2:
+            count=count+1
+    
+    return 2*count
+
+
     raise NotImplementedError()
