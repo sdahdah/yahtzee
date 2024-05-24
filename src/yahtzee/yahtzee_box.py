@@ -19,8 +19,6 @@ def yahtzee(dice: np.ndarray) -> int:
     int :
         Score.
     """
-    if np.all(dice==dice[0]):
-        print('YAHTZEE, BABY! \n')
+    if np.sum(dice == dice[0]) == 5:
         return 50
-    else:
-        return 0
+    return 0
