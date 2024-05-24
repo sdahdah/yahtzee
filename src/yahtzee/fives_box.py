@@ -19,5 +19,5 @@ def fives(dice: np.ndarray) -> int:
     num_fives = 0
     for i in range(len(dice)):
         if dice[i] == 5:
-            num_fives +=1
+            num_fives +=5
     return num_fives
