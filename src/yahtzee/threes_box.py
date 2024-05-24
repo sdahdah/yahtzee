@@ -17,8 +17,8 @@ def threes(dice: np.ndarray) -> int:
         Score.
     """
     score = 0
-    for i in range(len(dice)):
-        if dice[i] == 3:
+    for d in dice:
+        if d == 3:
             score += 3
-
+    
     return score
