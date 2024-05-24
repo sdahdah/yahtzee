@@ -20,4 +20,7 @@ def three_of_a_kind(dice: np.ndarray) -> int:
     int :
         Score.
     """
-    raise NotImplementedError()
+    if np.max(np.unique(dice, return_counts=True)[1]) >= 3:
+        return np.sum(dice)
+    else:
+        return 0
