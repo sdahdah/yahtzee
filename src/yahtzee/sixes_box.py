@@ -16,4 +16,13 @@ def sixes(dice: np.ndarray) -> int:
     int :
         Score.
     """
-    raise NotImplementedError()
+    # Where are there sixes?
+    sixes = np.where(dice == 6, 1, 0,)
+
+    # How many sixes are there?
+    nb_sixes = np.sum(sixes)
+
+    # What is the score?
+    score = 6 * nb_sixes
+
+    return score
