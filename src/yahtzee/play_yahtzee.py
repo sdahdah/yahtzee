@@ -1,5 +1,7 @@
 """Play a game of Yahtzee."""
 
+from typing import Tuple
+
 import numpy as np
 
 from .fives_box import fives
@@ -25,7 +27,7 @@ def play_yahtzee():
     print(f"Score: {score}, {name}")
 
 
-def score_dice(dice: np.ndarray) -> tuple[str, int]:
+def score_dice(dice: np.ndarray) -> Tuple[str, int]:
     """Score every scoring block and pick the highest.
 
     Parameters
@@ -35,7 +37,7 @@ def score_dice(dice: np.ndarray) -> tuple[str, int]:
 
     Returns
     -------
-    tuple[str, int] :
+    Tuple[str, int] :
         Name of scoring box and score.
     """
     scoring_boxes = [
